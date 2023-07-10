@@ -1,0 +1,33 @@
+.header {
+  background-color: #fff8f3;
+
+  &__inner {
+    padding-top: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+.menu__list {
+  display: flex;
+  gap: 20px;
+
+  &-link {
+    text-transform: uppercase;
+  }
+}
+.phone {
+  position: relative;
+
+
+}
+.phone::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/phone.svg);
+  width: 20px;
+  height: 20px;
+  left: -23px;
+  top: -3px;
+}
