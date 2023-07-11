@@ -1,0 +1,171 @@
+.about {
+  padding: 50px 0;
+  background-color: #A5978E;
+  color: #fafafa;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+
+    @include mob {
+      align-items: flex-end;
+    }
+    @include mini-mob {
+      padding-top: 0;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__content {
+    min-width: 370px;
+
+    @include tablets {
+      min-width: 300px;
+    }
+
+    @include small-tablet {
+      min-width: 200px;
+    }
+    @include mob {
+      min-width: 170px;
+    }
+    @include mini-mob {
+      min-width: 233px;
+    }
+
+  }
+  &__title {
+    margin-bottom: 15px;
+    font-size: 40px;
+
+    @include small-tablet {
+      margin-bottom: 20px;
+    }
+
+    @include mob {
+      font-size: 15px;
+    }
+
+  }
+  &__text {
+    margin-bottom: 15px;
+
+
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    padding-left: 110px;
+    padding-bottom: 48px;
+    gap: 0 20px;
+    flex-basis: 930px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-image: url(../img/about-decor.png);
+      width: 22px;
+      height: 30px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 22px;
+      bottom: 13px;
+      background-color: #7B6152;
+      width: 1000%;
+      height: 1px;
+    }
+
+    @include tablets {
+      padding-left: 20px;
+    }
+    @include small-tablet {
+      margin-left: 27px;
+      margin-bottom: 33px;
+      gap: 0 10px;
+    }
+    @include mob {
+      margin-left: 0;
+      margin-bottom: 0;
+      padding-left: 10px;
+      gap: 0 5px;
+      align-items: flex-end;
+    }
+    @include mini-mob {
+      margin-left: 12px;
+      padding-left: 12px;
+      padding-bottom: 30px;
+      gap: 0 15px;
+
+    }
+  }
+
+  &__item-img {
+    margin-bottom: 10px;
+
+    @include small-tablet {
+      margin-bottom: 6px;
+    }
+  }
+  &__item-img--1 {
+
+    @include small-tablet {
+      width: 120px;
+    }
+    @include mob {
+      width: 80px;
+    }
+
+  }
+  &__item-img--2 {
+
+    @include small-tablet {
+      width: 190px;
+    }
+    @include mob {
+      width: 140px;
+    }
+    @include mini-mob {
+      height: 10px;
+    }
+
+
+  }
+  &__item-img--3 {
+
+    @include small-tablet {
+      width: 120px;
+    }
+    @include mini-mob {
+      height: 10px;
+    }
+
+
+  }
+  &__item-text {
+    font-size: 11px;
+
+    @include small-tablet {
+      font-size: 6px;
+    }
+    @include mob {
+      display: none;
+    }
+
+
+  }
+}
+.title {
+
+  @include small-tablet {
+    font-size: 15px;
+  }
+  @include mini-mob {
+    margin-bottom: 10px;
+  }
+
+}

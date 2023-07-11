@@ -58,6 +58,9 @@
       margin-bottom: 30px;
 
     }
+    @include small-tablet {
+      margin-bottom: 20px;
+    }
 
     @include mobiles {
       margin-bottom: 20px;
@@ -70,8 +73,9 @@
     }
 
     @include mini-mob {
-      //padding: 14px 41px;
+      padding: 14px 41px;
       font-size: 10px;
+
     }
   }
   &__buy {
