@@ -29,3 +29,28 @@
     @content;
   }
 }
+@mixin tablets {
+  @media (max-width: (1000px)) {
+    @content;
+  }
+}
+@mixin small-tablets {
+  @media (max-width: (900px)) {
+    @content;
+  }
+}
+@mixin mobiles {
+  @media (max-width: (640px)) {
+    @content;
+  }
+}
+@mixin mob {
+  @media (max-width: (500px)) {
+    @content;
+  }
+}
+@mixin mini-mob {
+  @media (max-width: (360px)) {
+    @content;
+  }
+}

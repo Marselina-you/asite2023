@@ -6,17 +6,55 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include small-tablet {
+      flex-wrap: wrap;
+
+    }
+    @include mob {
+      flex-direction: column;
+      padding: 50px 0;
+      font-size: 14px;
+    }
+    
+
+
+
   }
   &__contacts {
     display: flex;
     flex-direction: column;
     width: 230px;
+
+    @include small-tablet {
+      width: 100%;
+      text-align: center;
+      padding-top: 15px;
+    }
   }
   &__social {
     display: flex;
     gap: 15px;
+
+    @include small-tablet {
+      justify-content: center;
+    }
   }
 }
 .email {
   margin: 17px 0;
 }
+.footer__menu {
+
+  @include mob {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+}
+.footer__menu-list {
+  @include mob {
+    flex-direction: column;
+  }
+}
+

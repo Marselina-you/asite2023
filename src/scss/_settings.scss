@@ -22,6 +22,10 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: 1.2;
+
+  @include small-tablet {
+    font-size: 10px;
+  }
 }
 
 
@@ -85,9 +89,18 @@ a {
 
 .container {
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 1180px;
+
+  @include small-tablet {
+    max-width: 640px;
+  }
+
+  @include mobiles {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
