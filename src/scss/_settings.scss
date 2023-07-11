@@ -139,3 +139,52 @@ button {
   border-radius: 0;
   cursor: pointer;
 }
+.button {
+  padding: 18px 54px;
+  background-color: #FFBD59;
+  //font-family: var(--font-family-yeseva);
+  font-size: 14px;
+  font-weight: 600;
+
+  @include small-tablet {
+    padding: 10px 26px;
+
+    font-size: 12px;
+  }
+
+  @include mini-mob {
+    font-size: 8px;
+    padding: 8px 20px;
+  }
+}
+
+.title {
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 400;
+}
+.section--decor {
+  position: relative;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-image: url(../img/section-decor.png);
+    width: 22px;
+    height: 30px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 22px;
+    bottom: 13px;
+    background-color: #7B6152;
+    width: 1000%;
+    height: 1px;
+  }
+
+}
+

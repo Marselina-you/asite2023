@@ -1,0 +1,161 @@
+.section {
+  padding-bottom: 150px;
+
+  @include mob {
+    padding-bottom: 50px;
+  }
+
+
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 370px auto;
+
+    @include tablets {
+      grid-template-columns: 290px auto;
+      gap: 0 10px;
+    }
+    @include small-tablets {
+      grid-template-columns: 200px auto;
+    }
+
+    @include mobiles {
+      display: block;
+    }
+
+  }
+  &__descr {
+    @include mobiles {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    @include mob {
+      margin: 0 auto;
+      width: 300px;
+    }
+    @include mini-mob {
+      margin-bottom: 25px;
+    }
+
+  }
+  &__content-descr {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-bottom: 92px;
+
+    @include mob {
+      padding-bottom: 62px;
+    }
+
+
+
+
+  }
+  &__text {
+    @include tablets {
+      font-size: 10px;
+    }
+    @include mobiles {
+      margin-bottom: 30px;
+    }
+
+  }
+
+
+}
+.products {
+
+  &__content {
+    gap: 50px 90px;
+
+    @include tablets {
+      gap: 67px;
+    }
+    @include small-tablets {
+      gap: 30px 16px;
+    }
+    @include small-tablet {
+      gap: 30px 16px;
+    }
+    @include mini-mob {
+      gap: 40px 7px;
+    }
+  }
+  &__title {
+    @include mobiles {
+      margin-bottom: 18px;
+    }
+
+
+  }
+
+  &__item {
+    margin: 0 auto;
+    width: 290px;
+    text-align: center;
+
+    @include small-tablet {
+      width: 200px;
+    }
+    @include mini-mob {
+      width: 150px;
+    }
+  }
+  &__item-img {
+    margin-bottom: 8px;
+
+    @include small-tablet {
+      margin-bottom: 6px;
+      width: 200px;
+    }
+    @include mini-mob {
+      width: 150px;
+    }
+  }
+  &__item-price {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-family: var(--font-family-yeseva);
+    font-weight: 400;
+
+    @include small-tablet {
+      font-size: 12px;
+      margin-bottom: 7px;
+    }
+    @include mini-mob {
+      font-size: 10px;
+      margin-bottom: 5px;
+    }
+  }
+  &__item-title {
+    margin-bottom: 16px;
+    font-family: var(--font-family-yeseva);
+    font-weight: 400;
+
+    @include small-tablet {
+      margin-bottom: 9px;
+      font-size: 12px;
+
+    }
+    @include mini-mob {
+      font-size: 10px;
+      //margin-bottom: 7px;
+    }
+  }
+  &__item-text {
+    margin-bottom: 27px;
+    font-size: 12px;
+
+
+    @include small-tablet {
+      margin-bottom: 18px;
+      font-size: 8px;
+    }
+
+    @include mini-mob {
+      margin-bottom: 16px;
+    }
+  }
+}
+

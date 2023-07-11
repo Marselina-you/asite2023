@@ -2,6 +2,11 @@
   padding: 50px 0;
   background-color: #A5978E;
   color: #fafafa;
+  margin-bottom: 150px;
+
+  @include small-tablet {
+    margin-bottom: 50px;
+  }
 
   &__inner {
     display: flex;
@@ -35,8 +40,7 @@
 
   }
   &__title {
-    margin-bottom: 15px;
-    font-size: 40px;
+
 
     @include small-tablet {
       margin-bottom: 20px;
@@ -59,26 +63,10 @@
     padding-bottom: 48px;
     gap: 0 20px;
     flex-basis: 930px;
-    position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      background-image: url(../img/about-decor.png);
-      width: 22px;
-      height: 30px;
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      left: 22px;
-      bottom: 13px;
-      background-color: #7B6152;
-      width: 1000%;
-      height: 1px;
-    }
+
+
+
 
     @include tablets {
       padding-left: 20px;
