@@ -1,0 +1,90 @@
+.team {
+  padding: 80px 0 60px;
+  background-color: #A5978E;
+  color: #fff;
+
+  @include tablets {
+    padding: 50px 0;
+  }
+  @include mob {
+    margin-bottom: 50px;
+  }
+
+  &__content {
+    padding-bottom: 0;
+    gap: 75px;
+
+    @include tablets {
+      gap: 30px 20px;
+    }
+    @include mob {
+      grid-template-columns: auto;
+    }
+
+  }
+  &__item {
+    position: relative;
+  }
+  &__item-box {
+    position: absolute;
+    z-index: 4;
+    bottom: 13px;
+    right: 33px;
+    width: 175px;
+    padding: 1px 20px 1px;
+    background-color: #7B6152;
+    text-align: center;
+
+    @include small-tablet {
+      bottom: 8px;
+      right: -24px;
+      padding: 9px 6px 10px ;
+      width: 109px;
+    }
+    @include mobiles {
+      right: auto;
+      left: 80px;
+    }
+    @include mob {
+      left: 148px;
+      bottom: 15px;
+      width: 151px;
+    }
+
+  }
+  &__item-name {
+    font-size: 12px;
+    font-family: var(--font-family-yeseva);
+    line-height: 50%;
+
+    @include small-tablet {
+      font-size: 8px;
+    }
+    @include mob {
+
+    font-size: 12px;
+    }
+  }
+  &__item-descr {
+    font-size: 10px;
+
+    @include small-tablet {
+      font-size: 7px;
+    }
+    @include mob {
+
+      font-size: 10px;
+      }
+  }
+  &__img {
+
+    @include small-tablet {
+      width: 140px;
+    }
+
+    @include mob {
+      width: 204px;
+    }
+  }
+
+}
