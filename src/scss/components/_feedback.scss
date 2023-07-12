@@ -1,0 +1,166 @@
+.feedback {
+  margin-top: 90px;
+
+  &__inner {
+
+    @include tablets {
+      grid-template-columns: 260px auto;
+    }
+  }
+
+  &__slider {
+    width: 690px;
+    overflow: hidden;
+
+    @include small-tablet {
+      width: 250px;
+      margin: 0 auto;
+    }
+  }
+
+  &__content {
+    padding-bottom: 110px;
+  }
+  &__item-content {
+    padding-bottom: 70px;
+
+    @include small-tablet {
+      padding-bottom: 45px;
+    }
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0 16px;
+    //padding-left: 20px;
+    align-items: center;
+
+    @include small-tablet {
+      grid-template-columns: auto;
+      text-align: center;
+    }
+
+  }
+  &__item-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+
+    @include mini-mob {
+      margin: 0 auto;
+      bottom: 0;
+      left: 0;
+      max-width: 100px;
+    }
+
+
+
+  }
+  &__item-video {
+    position: relative;
+
+    @include small-tablet {
+      width: 200px;
+    }
+    @include mini-mob {
+      width: 250px;
+    }
+  }
+  &__item-img {
+
+
+    @include small-tablet {
+      width: 200px;
+    }
+    @include mini-mob {
+      width: 250px;
+      margin: 0 auto 20px;
+    }
+  }
+  &__item-videobtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+
+
+  }
+
+
+  &__item-sociallink {
+    margin-bottom: 12px;
+  }
+  &__item-name {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-family: var(--font-family-yeseva);
+  }
+  &__item-text {
+    margin-bottom: 15px;
+
+
+  }
+}
+.feedback__content .swiper-pagination {
+  bottom: 50px;
+
+}
+.swiper-pagination-bullet {
+  background-color: #bea495;
+  width: 53px;
+  height: 4px;
+  border-radius: 0;
+  opacity: 1;
+
+}
+.swiper-pagination-bullet-active {
+  background-color: #7B6152;
+
+
+}
+.certification {
+
+  &__slider {
+    width: 1000px;
+    overflow: hidden;
+
+    @include tablets {
+      width: 880px;
+    }
+    @include small-tablet {
+      width: 650px;
+    }
+    @include mob {
+      width: 415px;
+      margin: 0 auto;
+    }
+    @include mini-mob {
+      width: 200px;
+      //margin: 0 auto;
+    }
+  }
+  &__descr {
+    margin-right: 20px;
+  }
+  &__content {
+    padding-bottom: 114px;
+  }
+  &__content img {
+    width: 280px;
+
+
+    @include mob {
+      width: 200px;
+      margin: 0 auto;
+    }
+  }
+}
+.certification__content .swiper-pagination {
+  bottom: 60px;
+  //text-align: left;
+
+}
+
+
