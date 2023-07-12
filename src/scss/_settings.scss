@@ -162,6 +162,11 @@ button {
   margin-bottom: 40px;
   font-size: 40px;
   font-weight: 400;
+  font-family: var(--font-family-yeseva);
+
+  @include small-tablets {
+    font-size: 15px;
+  }
 }
 .section--decor {
   position: relative;

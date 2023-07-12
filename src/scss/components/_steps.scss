@@ -1,0 +1,91 @@
+.steps {
+
+  &__list {
+    gap: 70px 25px;
+    counter-reset: number;
+
+
+    @include desk-tab {
+      gap: 37px 35px;
+      padding-left: 0;
+    }
+    @include mob {
+      gap: 25px 40px;
+    }
+    @include mini-mob {
+      gap: 20px 25px;
+    }
+
+
+
+
+  }
+
+  &__item {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    position: relative;
+
+    &::before {
+      counter-increment: number;
+      content: '0' counter(number);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      font-size: 30px;
+      color: #BEA495;
+      font-family: var(--font-family-yeseva);
+
+      @include small-tablet {
+        font-size: 20px;
+      }
+    }
+
+    @include desk-tab {
+      gap: 0 30px;
+    }
+    @include small-tablet {
+      gap: 0 20px;
+    }
+    @include mini-mob {
+      gap: 0 16px;
+    }
+
+  }
+  &__item:nth-child(n+10)::before {
+    content: counter(number);
+  }
+  &__item--even {
+    &::before {
+      left: auto;
+      right: 0;
+    }
+  }
+  &__item-text {
+    flex-basis: 174px;
+    padding-bottom: 40px;
+
+    @include small-tablet {
+      font-size: 8px;
+    }
+    @include mini-mob {
+      font-size: 6px;
+    }
+
+
+
+  }
+  &__item-img {
+
+    @include small-tablet {
+      width: 85px;
+      object-fit: cover;
+    }
+    @include mini-mob {
+      width: 66px;
+    }
+
+
+  }
+}

@@ -11,9 +11,24 @@
     @content;
   }
 }
+@mixin desk-tab {
+  @media (max-width: (1050px)) {
+    @content;
+  }
+}
 
 @mixin tablet {
   @media (max-width: (1024px)) {
+    @content;
+  }
+}
+@mixin tablets {
+  @media (max-width: (1000px)) {
+    @content;
+  }
+}
+@mixin small-tablets {
+  @media (max-width: (900px)) {
     @content;
   }
 }
@@ -29,16 +44,8 @@
     @content;
   }
 }
-@mixin tablets {
-  @media (max-width: (1000px)) {
-    @content;
-  }
-}
-@mixin small-tablets {
-  @media (max-width: (900px)) {
-    @content;
-  }
-}
+
+
 @mixin mobiles {
   @media (max-width: (640px)) {
     @content;
