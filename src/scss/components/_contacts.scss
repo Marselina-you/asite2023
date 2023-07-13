@@ -1,0 +1,94 @@
+.contacts {
+  padding: 150px 0 50px;
+
+  @include mini-mob {
+    padding-top: 50px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__img {
+
+    @include tablets {
+      width: 335px;
+    }
+    @include small-tablet {
+      width: 187px;
+      object-fit: cover;
+    }
+
+    @include mob {
+      display: none;
+    }
+
+  }
+
+
+
+}
+.form {
+  width: 664px;
+  padding: 75px 42px 67px;
+  background-color: #fff;
+
+  @include small-tablet {
+    padding: 30px 22px;
+    width: 440px;
+    gap: 0 20px;
+
+  }
+
+&__title {
+  font-family: var(--font-family-yeseva);
+  margin-bottom: 60px;
+  font-size: 40px;
+
+  @include small-tablet {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}
+&__input {
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  display: block;
+  margin-bottom: 15px;
+  padding: 7px 10px;
+  color: black;
+
+
+  ::placeholder  {
+    color: #B3B3B3;
+    font-size: 14px;
+    font-family: var(--font-family-comfortaa);
+    font-style: normal;
+    font-weight: 400;
+
+    @include mob {
+      font-size: 10px;
+    }
+
+
+
+
+  }
+}
+&__btn {
+  background-color: #FFBD59;
+  font-family: var(--font-family-comfortaa);
+  font-size: 14px;
+  color: #272727;
+  margin-top: 36px;
+  padding: 17px 34px;
+
+  @include small-tablet {
+    margin-top: 10px;
+  }
+
+}
+}
